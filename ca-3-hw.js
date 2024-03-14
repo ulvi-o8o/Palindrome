@@ -70,3 +70,22 @@ console.log(isPalindrome(121)); // true
 console.log(isPalindrome(12321)); // true
 console.log(isPalindrome(12345)); // false
 console.log(isPalindrome(1213121));
+
+// YOLKA
+
+function generatePineTree(height) {
+  for (let i = 0; i < height; i++) {
+    let row = "";
+
+    for (let j = 0; j < height - i - 1; j++) {
+      row += " ";
+    }
+
+    for (let k = 0; k < 2 * i + 1; k++) {
+      row += k + 1;
+    }
+    console.log(row);
+  }
+}
+
+generatePineTree(5);
